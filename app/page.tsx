@@ -119,10 +119,7 @@ export default function Home() {
 </svg>
             </a>
 
-            <a className="secondary-link" href="#work">
-              See recent work
-              <span aria-hidden="true">↓</span>
-            </a>
+           
           </div>
         </div>
 
@@ -232,7 +229,14 @@ export default function Home() {
 
         <span className="work-pill">
           Buzz Vans
-          <span aria-hidden="true">↗</span>
+         <svg
+  className="button-arrow"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path d="M7 17L17 7" />
+  <path d="M9 7H17V15" />
+</svg>
         </span>
       </a>
 
@@ -265,7 +269,14 @@ export default function Home() {
 
         <span className="work-pill">
           PPM
-          <span aria-hidden="true">↗</span>
+      <svg
+  className="button-arrow"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path d="M7 17L17 7" />
+  <path d="M9 7H17V15" />
+</svg>
         </span>
       </a>
 
@@ -333,7 +344,14 @@ export default function Home() {
 
       <a className="package-link" href="#contact">
         Discuss a launch page
-        <span aria-hidden="true">↗</span>
+<svg
+  className="button-arrow"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path d="M7 17L17 7" />
+  <path d="M9 7H17V15" />
+</svg>
       </a>
     </article>
 
@@ -365,7 +383,14 @@ export default function Home() {
 
       <a className="package-link" href="#contact">
         Discuss a business website
-        <span aria-hidden="true">↗</span>
+      <svg
+  className="button-arrow"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path d="M7 17L17 7" />
+  <path d="M9 7H17V15" />
+</svg>
       </a>
     </article>
 
@@ -396,7 +421,14 @@ export default function Home() {
 
       <a className="package-link" href="#contact">
         Discuss a bespoke project
-        <span aria-hidden="true">↗</span>
+      <svg
+  className="button-arrow"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path d="M7 17L17 7" />
+  <path d="M9 7H17V15" />
+</svg>
       </a>
     </article>
   </div>
