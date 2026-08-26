@@ -1575,3 +1575,14 @@ a {
   color: var(--charcoal);
   font-weight: 800;
 }
+
+.button-arrow {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

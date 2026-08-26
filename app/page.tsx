@@ -109,7 +109,14 @@ export default function Home() {
           <div className="hero-actions">
             <a className="primary-button" href="#contact">
               Tell me about your project
-              <span aria-hidden="true">↗</span>
+              <svg
+  className="button-arrow"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path d="M7 17L17 7" />
+  <path d="M9 7H17V15" />
+</svg>
             </a>
 
             <a className="secondary-link" href="#work">

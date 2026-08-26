@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Good Fruit Creative — thoughtful websites for growing businesses";
+  "Good Fruit Creative — smart websites for growing businesses";
 
 export const size = {
   width: 1200,

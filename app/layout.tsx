@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Thoughtful, professional websites for growing businesses. Independent web design and development based in Worthing, West Sussex.",
+    "Smart, professional websites for growing businesses. Independent web design and development based in Worthing, West Sussex.",
 
   applicationName: "Good Fruit Creative",
 
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: siteUrl,
     siteName: "Good Fruit Creative",
-    title: "Good Fruit Creative | Thoughtful Websites",
+    title: "Good Fruit Creative | Smart websites for growing businesses",
     description:
       "Professional websites that help small businesses earn trust and generate enquiries.",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Good Fruit Creative | Thoughtful Websites",
+    title: "Good Fruit Creative | Smart websites for growing businesses",
     description:
       "Professional websites that help small businesses earn trust and generate enquiries.",
   },
