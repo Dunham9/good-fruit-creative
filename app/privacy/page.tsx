@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Good Fruit Creative",
+  title: "Privacy Policy",
   description:
     "How Good Fruit Creative collects, uses and protects personal information.",
 };

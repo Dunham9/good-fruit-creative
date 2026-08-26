@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Good Fruit Creative",
+  title: "Terms & Conditions",
   description:
     "Terms and conditions for web design, development and hosting services provided by Good Fruit Creative.",
 };

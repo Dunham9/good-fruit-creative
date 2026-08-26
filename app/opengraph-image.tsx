@@ -56,7 +56,7 @@ export default function OpenGraphImage() {
               letterSpacing: "-5px",
             }}
           >
-            <span>Thoughtful websites</span>
+            <span>Smart websites</span>
             <span style={{ color: "#174a32" }}>
               for growing businesses.
             </span>

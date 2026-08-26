@@ -30,32 +30,67 @@ function FruitBowl({ small = false }: { small?: boolean }) {
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <a className="brand" href="/" aria-label="Good Fruit Creative home">
-          <FruitBowl small />
+<header className="site-header" id="top">
+  <a
+    className="brand"
+    href="#top"
+    aria-label="Good Fruit Creative home"
+  >
+    <FruitBowl small />
 
-          <span className="brand-name">
-            good fruit
-            <br />
-            creative
-          </span>
-        </a>
+    <span className="brand-name">
+      good fruit
+      <br />
+      creative
+    </span>
+  </a>
 
-        <nav className="desktop-navigation" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#services">Services</a>
+  <nav
+    className="desktop-navigation"
+    aria-label="Main navigation"
+  >
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
 
-          <a className="navigation-button" href="#contact">
-            Start a project
-          </a>
-        </nav>
+    <a className="navigation-button" href="#contact">
+      Start a project
+    </a>
+  </nav>
 
-        <a className="mobile-navigation-button" href="#contact">
-          Get in touch
-        </a>
-      </header>
+  <details className="mobile-navigation">
+    <summary aria-label="Open navigation menu">
+      <span className="burger-line" />
+      <span className="burger-line" />
+      <span className="burger-line" />
+    </summary>
 
+    <nav
+      className="mobile-navigation-panel"
+      aria-label="Mobile navigation"
+    >
+      <a href="#about">
+        About
+        <span aria-hidden="true">↘</span>
+      </a>
+
+      <a href="#work">
+        Work
+        <span aria-hidden="true">↘</span>
+      </a>
+
+      <a href="#services">
+        Services
+        <span aria-hidden="true">↘</span>
+      </a>
+
+      <a className="mobile-project-link" href="#contact">
+        Start a project
+        <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+  </details>
+</header>
       <section className="hero">
         <div className="hero-copy">
           <p className="eyebrow">
@@ -63,7 +98,7 @@ export default function Home() {
           </p>
 
          <h1>
-  Thoughtful websites
+  Smart websites
   <span>for growing businesses.</span>
 </h1>
 
@@ -178,7 +213,7 @@ export default function Home() {
     <article className="project-row">
       <a
         className="project-preview"
-        href="https://buzzvans.com/"
+        href="https://na/"
         target="_blank"
         rel="noreferrer"
         aria-label="Visit the BuzzVans website"
@@ -395,49 +430,58 @@ export default function Home() {
 
 <footer className="site-footer">
   <div className="footer-content">
-    <a className="brand footer-brand" href="#top">
-      <FruitBowl small />
+    <div className="footer-brand-row">
+      <a className="brand footer-brand" href="#top">
+        <FruitBowl small />
 
-      <span className="brand-name">
-        good fruit
-        <br />
-        creative
-      </span>
-    </a>
+        <span className="brand-name">
+          good fruit
+          <br />
+          creative
+        </span>
+      </a>
 
-    <span
-      className="instagram-placeholder"
-      aria-label="Good Fruit Creative on Instagram — coming soon"
-      title="Instagram coming soon"
-    >
-      <svg
-        viewBox="0 0 24 24"
-        aria-hidden="true"
+      <a
+        className="footer-instagram"
+        href="https://www.instagram.com/goodfruitcreativeuk/"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Good Fruit Creative on Instagram"
       >
-        <rect
-          x="3"
-          y="3"
-          width="18"
-          height="18"
-          rx="5"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect
+            x="3"
+            y="3"
+            width="18"
+            height="18"
+            rx="5"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          />
 
-        <circle
-          cx="12"
-          cy="12"
-          r="4"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
+          <circle
+            cx="12"
+            cy="12"
+            r="4"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          />
 
-        <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" />
-      </svg>
-    </span>
-     
+          <circle
+            cx="17.5"
+            cy="6.5"
+            r="1.1"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <p className="footer-tagline">
+      Smart websites for growing businesses.
+    </p>
 
     <nav className="footer-legal" aria-label="Legal information">
       <a href="/terms">Terms &amp; conditions</a>
