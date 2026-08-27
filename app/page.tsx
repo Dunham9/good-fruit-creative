@@ -166,10 +166,10 @@ export default function Home() {
   <div className="about-introduction">
     <p className="eyebrow">A small studio for small business</p>
 
-    <h2>
-      A simpler way to build
-      <span>a better website.</span>
-    </h2>
+  <h2>
+  A simpler way to build{" "}
+  <span>a better website.</span>
+</h2>
 
     <p className="about-lead">
       Good Fruit Creative is an independent web design and development
