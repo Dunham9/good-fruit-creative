@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import AnalyticsConsent from "./analytics-consent";
 
 const siteUrl = "https://goodfruitcreative.co.uk";
 
@@ -77,8 +78,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en-GB">
-      <body>{children}</body>
+    <html lang="en">
+      <body>
+        {children}
+        <AnalyticsConsent />
+      </body>
     </html>
   );
 }

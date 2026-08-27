@@ -1300,47 +1300,20 @@ a {
 }
 
 /* Hero artwork — tablet */
+/* Hide hero artwork on tablet and mobile */
 
 @media (max-width: 900px) {
   .hero-artwork {
-    width: 100%;
-    min-height: auto;
-    padding: 25px 0 10px;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
-    overflow: visible;
-  }
-
-  .hero-artwork .fruit-bowl {
-    width: 190px;
-    max-width: none;
-    align-self: center;
-  }
-
-  .artwork-message {
-    width: 100%;
-    font-size: 30px;
-    line-height: 1.05;
-    text-align: center;
+    display: none;
   }
 }
 
 /* Hero artwork — mobile */
+/* Hide hero artwork on tablet and mobile */
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .hero-artwork {
-    padding: 5px 0 0;
-    gap: 24px;
-  }
-
-  .hero-artwork .fruit-bowl {
-    width: 135px;
-  }
-
-  .artwork-message {
-    font-size: 25px;
+    display: none;
   }
 }
 
@@ -1585,4 +1558,93 @@ a {
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+/* Cookie consent */
+
+.cookie-banner {
+  position: fixed;
+  z-index: 100;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--cream);
+  color: var(--charcoal);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 18px 55px rgba(23, 74, 50, 0.2);
+}
+
+.cookie-banner strong {
+  display: block;
+  color: var(--green);
+  font-size: 15px;
+}
+
+.cookie-banner p {
+  max-width: 430px;
+  margin: 7px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.cookie-actions button,
+.cookie-settings {
+  padding: 11px 15px;
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.cookie-accept {
+  background: var(--green);
+  color: white;
+}
+
+.cookie-decline {
+  background: transparent;
+  color: var(--green);
+}
+
+.cookie-settings {
+  position: fixed;
+  z-index: 90;
+  bottom: 12px;
+  left: 12px;
+  padding: 7px 10px;
+  background: var(--cream);
+  color: var(--green);
+  font-size: 10px;
+}
+
+@media (max-width: 600px) {
+  .cookie-banner {
+    padding: 18px;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cookie-actions {
+    width: 100%;
+  }
+
+  .cookie-actions button {
+    flex: 1;
+  }
 }

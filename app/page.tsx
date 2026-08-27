@@ -173,13 +173,10 @@ export default function Home() {
 
     <p className="about-lead">
       Good Fruit Creative is an independent web design and development
-      studio helping small UK businesses show up well online.
+      studio for small UK businesses, helping them make a stronger impression online.
     </p>
 
-    <p>
-      You’ll work directly with me throughout the project. That means
-      honest advice and quick communication.
-    </p>
+
   </div>
 
   <div className="about-grid">
@@ -245,7 +242,7 @@ export default function Home() {
     <article className="project-row">
       <a
         className="project-preview"
-        href="https://na/"
+        href="https://buzzvans.com/"
         target="_blank"
         rel="noreferrer"
         aria-label="Visit the BuzzVans website"
@@ -272,12 +269,12 @@ export default function Home() {
         <p className="project-label">01 / BuzzVans</p>
 
         <h3>
-          A lively, lead-focused website for a family-run removals
+          A lead-focused website for a family-run removals
           business.
         </h3>
 
         <p>
-        Bringing four services under one recognisable brand, the website helps customers find the right support and makes requesting a quote straightforward.
+        Bringing four services under one recognisable brand, the website helps customers find the right service and makes requesting a quote straightforward.
         </p>
       </div>
     </article>
@@ -314,7 +311,7 @@ export default function Home() {
         </p>
 
         <h3>
-          A calm, confident home for an independent property
+          A confident home for an independent property
           specialist.
         </h3>
 
