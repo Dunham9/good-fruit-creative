@@ -316,9 +316,7 @@ export default function Home() {
         </h3>
 
         <p>
-          A premium but approachable identity, structured services and
-          straightforward calls to action for landlords and property
-          owners.
+          A premium but approachable identity, while retaining the personal feel of an independent business.
         </p>
       </div>
     </article>
@@ -479,7 +477,7 @@ export default function Home() {
 
     <p>
       Tell me a little about your business and the website you have in
-      mind. I’ll come back to you with a sensible next step.
+      mind. I’ll come back to you with some ideas, costs and what we can do next.
     </p>
 
     <a
