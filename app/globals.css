@@ -931,9 +931,6 @@ a {
 
 /* Footer */
 
-/* Footer */
-/* Footer */
-
 .site-footer {
   padding: 75px 20px 32px;
   background: var(--green);
@@ -952,6 +949,7 @@ a {
 .footer-brand-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 18px;
 }
 
@@ -967,10 +965,19 @@ a {
   border-radius: 50%;
 }
 
-.footer-instagram {
+/* Instagram and Facebook */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-social-link {
   width: 43px;
   height: 43px;
   display: inline-flex;
+  flex: 0 0 43px;
   align-items: center;
   justify-content: center;
   color: white;
@@ -984,19 +991,20 @@ a {
     transform 180ms ease;
 }
 
-.footer-instagram svg {
+.footer-social-link svg {
   width: 20px;
   height: 20px;
+  display: block;
 }
 
-.footer-instagram:hover {
+.footer-social-link:hover {
   background: var(--pear);
   color: var(--green);
   border-color: var(--pear);
   transform: translateY(-2px);
 }
 
-.footer-instagram:focus-visible {
+.footer-social-link:focus-visible {
   outline: 3px solid var(--yellow);
   outline-offset: 3px;
 }
@@ -1034,6 +1042,40 @@ a {
   color: rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding-top: 60px;
+  }
+
+  .footer-brand-row {
+    gap: 15px;
+  }
+
+  .footer-socials {
+    gap: 8px;
+  }
+
+  .footer-social-link {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
+  .footer-social-link svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .footer-tagline {
+    margin-top: 24px;
+    font-size: 13px;
+  }
+
+  .footer-legal {
+    margin-top: 26px;
+  }
 }
 
 @media (max-width: 600px) {

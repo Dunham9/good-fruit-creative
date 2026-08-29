@@ -492,54 +492,68 @@ export default function Home() {
 
 <footer className="site-footer">
   <div className="footer-content">
-    <div className="footer-brand-row">
-      <a className="brand footer-brand" href="#top">
-        <FruitBowl small />
+  <div className="footer-brand-row">
+  <a
+    className="brand footer-brand"
+    href="#top"
+    aria-label="Good Fruit Creative home"
+  >
+    <FruitBowl small />
 
-        <span className="brand-name">
-          good fruit
-          <br />
-          creative
-        </span>
-      </a>
+    <span className="brand-name">
+      good fruit
+      <br />
+      creative
+    </span>
+  </a>
 
-      <a
-        className="footer-instagram"
-        href="https://www.instagram.com/goodfruitcreativeuk/"
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Good Fruit Creative on Instagram"
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <rect
-            x="3"
-            y="3"
-            width="18"
-            height="18"
-            rx="5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-          />
+  <div className="footer-socials">
+    <a
+      className="footer-social-link"
+      href="https://www.instagram.com/goodfruitcreativeuk/"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Good Fruit Creative on Instagram"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect
+          x="3"
+          y="3"
+          width="18"
+          height="18"
+          rx="5"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="4"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+        />
+        <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" />
+      </svg>
+    </a>
 
-          <circle
-            cx="12"
-            cy="12"
-            r="4"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-          />
-
-          <circle
-            cx="17.5"
-            cy="6.5"
-            r="1.1"
-            fill="currentColor"
-          />
-        </svg>
-      </a>
-    </div>
+    <a
+      className="footer-social-link"
+      href="https://www.facebook.com/profile.php?id=61593590682580"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Good Fruit Creative on Facebook"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M14.2 8.2V6.7c0-.7.5-.9 1-.9h2.5V2.2L14.4 2c-3.3 0-5.3 2-5.3 5.6v.6H6v4.2h3.1V22h5.1v-9.6h3.4l.6-4.2h-4Z"
+          fill="currentColor"
+        />
+      </svg>
+    </a>
+  </div>
+</div>
 
     <p className="footer-tagline">
       Smart websites for growing businesses.
