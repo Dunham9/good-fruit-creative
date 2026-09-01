@@ -457,7 +457,7 @@ export default function Home() {
   </div>
 
   <p className="package-note">
-      Managed hosting is available from £5 per month.
+      Managed hosting is available from £10 per month.
   </p>
 </section>
 
