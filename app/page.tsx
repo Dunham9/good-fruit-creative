@@ -194,7 +194,7 @@ export default function Home() {
     <article className="about-card">
       <span className="about-card-number">02</span>
 
-      <h3>Thoughtful design</h3>
+      <h3>Bespoke design</h3>
 
       <p>
         A website shaped around your business, customers and goals.
