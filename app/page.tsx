@@ -164,7 +164,7 @@ export default function Home() {
 
       <section className="about-section" id="about">
   <div className="about-introduction">
-    <p className="eyebrow">A small studio for small business</p>
+    <p className="eyebrow">A small studio for small businesses</p>
 
   <h2>
   A simpler way to build{" "}
@@ -172,8 +172,8 @@ export default function Home() {
 </h2>
 
     <p className="about-lead">
-      Good Fruit Creative is an independent web design and development
-      studio for small UK businesses, helping them make a stronger impression online.
+      At Good Fruit Creative, we believe a professional website shouldn't be out of reach. That’s why our affordable packages combine smart design, mobile-responsive development and essential SEO, giving small businesses a strong foundation to look credible and be found online.
+
     </p>
 
 
@@ -335,7 +335,7 @@ export default function Home() {
     </div>
 
     <p>
-      Clear packages, sensible starting prices and no unnecessary
+      Clear packages, affordable starting prices and no unnecessary
       extras. Every website is designed and built around your business.
     </p>
   </div>
@@ -353,7 +353,7 @@ export default function Home() {
 
       <div className="package-price">
         <span>From</span>
-        <strong>£495</strong>
+        <strong>£395</strong>
       </div>
 
   <ul className="package-features">
@@ -392,13 +392,13 @@ export default function Home() {
 
       <div className="package-price">
         <span>From</span>
-        <strong>£795</strong>
+        <strong>£695</strong>
       </div>
 
     <ul className="package-features">
   <li>Up to five core pages</li>
   <li>Planning and page structure</li>
-  <li>Bespoke responsive design</li>
+  <li>Mobile-responsive design</li>
   <li>Contact forms and content guidance</li>
   <li>Local SEO, Search Console and analytics</li>
   <li>Two revision rounds and launch support</li>
