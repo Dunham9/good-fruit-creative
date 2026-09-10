@@ -554,6 +554,11 @@ a {
   background: rgba(242, 184, 75, 0.25);
 }
 
+.about-card:nth-child(4) .about-card-number {
+  background: var(--green);
+  color: var(--cream);
+}
+
 .about-card h3 {
   margin: 0 0 14px;
   color: var(--green);
@@ -867,6 +872,41 @@ a {
   color: rgba(32, 37, 31, 0.6);
   font-size: 11px;
   line-height: 1.5;
+}
+
+
+.form-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.contact-submit:disabled {
+  cursor: wait;
+  opacity: 0.7;
+  transform: none;
+}
+
+.form-message {
+  margin: -10px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.form-message--success {
+  color: var(--green);
+}
+
+.form-message--error {
+  color: #8b2f2f;
+}
+
+.form-message--error a {
+  color: inherit;
+  font-weight: 700;
 }
 
 @media (max-width: 900px) {

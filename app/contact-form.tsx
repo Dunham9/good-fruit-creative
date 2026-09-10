@@ -1,35 +1,48 @@
 "use client";
 
-import type { FormEvent } from "react";
+import { FormEvent, useState } from "react";
+
+type FormStatus = "idle" | "sending" | "success" | "error";
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 export default function ContactForm() {
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  const [status, setStatus] = useState<FormStatus>("idle");
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const form = new FormData(event.currentTarget);
+    const formElement = event.currentTarget;
+    const formData = new FormData(formElement);
 
-    const name = form.get("name");
-    const business = form.get("business");
-    const email = form.get("email");
-    const project = form.get("project");
-    const message = form.get("message");
+    setStatus("sending");
 
-    const subject = encodeURIComponent(
-      `Website enquiry from ${name}`,
-    );
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(Object.fromEntries(formData.entries())),
+      });
 
-    const body = encodeURIComponent(
-      `Name: ${name}
-Business: ${business}
-Email: ${email}
-Project type: ${project}
+      if (!response.ok) {
+        throw new Error("The enquiry could not be sent.");
+      }
 
-Project details:
-${message}`,
-    );
+      formElement.reset();
+      setStatus("success");
 
-    window.location.href =
-      `mailto:hello@goodfruitcreative.co.uk?subject=${subject}&body=${body}`;
+      window.gtag?.("event", "generate_lead", {
+        form_name: "website_enquiry",
+      });
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -41,6 +54,7 @@ ${message}`,
             type="text"
             name="name"
             autoComplete="name"
+            maxLength={100}
             required
           />
         </label>
@@ -51,6 +65,7 @@ ${message}`,
             type="text"
             name="business"
             autoComplete="organization"
+            maxLength={120}
           />
         </label>
       </div>
@@ -61,6 +76,7 @@ ${message}`,
           type="email"
           name="email"
           autoComplete="email"
+          maxLength={254}
           required
         />
       </label>
@@ -85,18 +101,55 @@ ${message}`,
         <textarea
           name="message"
           rows={5}
+          maxLength={3000}
           placeholder="A little about the business, what you need and when you would like to get started..."
           required
         />
       </label>
 
-      <button className="contact-submit" type="submit">
-        Send enquiry
-        <span aria-hidden="true">↗</span>
+      <label className="form-honeypot" aria-hidden="true">
+        Website
+        <input
+          type="text"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </label>
+
+      <button
+        className="contact-submit"
+        type="submit"
+        disabled={status === "sending"}
+      >
+        <span>
+          {status === "sending" ? "Sending…" : "Send enquiry"}
+        </span>
+
+        {status !== "sending" && (
+          <span aria-hidden="true">↗</span>
+        )}
       </button>
 
+      {status === "success" && (
+        <p className="form-message form-message--success" role="status">
+          Thanks — your enquiry has been sent. We'll aim to be in touch within one
+          working day.
+        </p>
+      )}
+
+      {status === "error" && (
+        <p className="form-message form-message--error" role="alert">
+          Sorry, something went wrong. Please email{" "}
+          <a href="mailto:hello@goodfruitcreative.co.uk">
+            hello@goodfruitcreative.co.uk
+          </a>
+          .
+        </p>
+      )}
+
       <p className="form-note">
-        This opens a prepared message in your usual email app.
+        We will aim to reply within one working day.
       </p>
     </form>
   );

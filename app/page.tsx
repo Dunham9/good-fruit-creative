@@ -49,8 +49,9 @@ export default function Home() {
     className="desktop-navigation"
     aria-label="Main navigation"
   >
-    <a href="#about">About</a>
+    
     <a href="#work">Work</a>
+    <a href="#about">About</a>
     <a href="#services">Services</a>
 
     <a className="navigation-button" href="#contact">
@@ -69,8 +70,8 @@ export default function Home() {
       className="mobile-navigation-panel"
       aria-label="Mobile navigation"
     >
-      <a href="#about">
-        About
+      <a href="#work">
+        Work
         <svg
   className="button-arrow"
   viewBox="0 0 24 24"
@@ -81,8 +82,8 @@ export default function Home() {
 </svg>
       </a>
 
-      <a href="#work">
-        Work
+      <a href="#about">
+        About
        <svg
   className="button-arrow"
   viewBox="0 0 24 24"
@@ -161,69 +162,6 @@ export default function Home() {
   </p>
 </div>
       </section>
-
-      <section className="about-section" id="about">
-  <div className="about-introduction">
-    <p className="eyebrow">A small studio for small businesses</p>
-
-  <h2>
-  A simpler way to build{" "}
-  <span>a better website.</span>
-</h2>
-
-    <p className="about-lead">
-      At Good Fruit Creative, we believe a professional website shouldn't be out of reach. That’s why our affordable packages combine smart design, mobile-responsive development and essential SEO, giving small businesses a strong foundation to look credible and be found online.
-
-    </p>
-
-
-  </div>
-
-  <div className="about-grid">
-    <article className="about-card">
-      <span className="about-card-number">01</span>
-
-      <h3>Direct collaboration</h3>
-
-      <p>
-        Work directly with the person planning, designing and building
-        your website.
-      </p>
-    </article>
-
-    <article className="about-card">
-      <span className="about-card-number">02</span>
-
-      <h3>Bespoke design</h3>
-
-      <p>
-        A website shaped around your business, customers and goals.
-      </p>
-    </article>
-
-    <article className="about-card">
-      <span className="about-card-number">03</span>
-
-      <h3>Clear pricing</h3>
-
-      <p>
-        Straightforward costs and no unexpected
-        surprises.
-      </p>
-    </article>
-
-    <article className="about-card">
-      <span className="about-card-number">04</span>
-
-      <h3>Built for growth</h3>
-
-      <p>
-        A professional foundation that can develop alongside your
-        business.
-      </p>
-    </article>
-  </div>
-</section>
 
 <section className="work-section" id="work">
   <div className="work-heading">
@@ -319,6 +257,67 @@ export default function Home() {
           A premium but approachable identity, while retaining the personal feel of an independent business.
         </p>
       </div>
+    </article>
+  </div>
+</section>
+
+<section className="about-section" id="about">
+  <div className="about-introduction">
+    <p className="eyebrow">A small studio for small businesses</p>
+
+  <h2>
+  A simpler way
+  <br />
+  to build a{" "}
+  <span>better website.</span>
+</h2>
+
+    <p className="about-lead">
+      At Good Fruit Creative, we believe a professional website shouldn't be out of reach. That’s why our affordable packages combine smart design, mobile-responsive development and essential SEO, giving small businesses a strong foundation to look credible and be found online.
+    </p>
+  </div>
+
+  <div className="about-grid">
+    <article className="about-card">
+      <span className="about-card-number">01</span>
+
+      <h3>Direct collaboration</h3>
+
+      <p>
+        Work directly with the person planning, designing and building
+        your website.
+      </p>
+    </article>
+
+    <article className="about-card">
+      <span className="about-card-number">02</span>
+
+      <h3>Bespoke design</h3>
+
+      <p>
+        A website shaped around your business, customers and goals.
+      </p>
+    </article>
+
+    <article className="about-card">
+      <span className="about-card-number">03</span>
+
+      <h3>Clear pricing</h3>
+
+      <p>
+        Straightforward costs and no unexpected surprises.
+      </p>
+    </article>
+
+    <article className="about-card">
+      <span className="about-card-number">04</span>
+
+      <h3>Built for growth</h3>
+
+      <p>
+        A professional foundation that can develop alongside your
+        business.
+      </p>
     </article>
   </div>
 </section>
